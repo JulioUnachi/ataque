@@ -1,4 +1,5 @@
 
+/*Ajustes globales*/
 *{
   margin: 0;
   padding: 0;
@@ -6,28 +7,32 @@
 
 }
 
-
-
-
-
+/*Contenedor padre*/
 .contenedor{
-    width: 100%;
-
+   width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border: red;
-    border: #28C76F;
+
 }
-h1{
-    font-size: 4rem;
+/*Posicionamiento*/
+h1:hover{
+  text-decoration: underline wavy hotpink;
+  font-size: 3.5rem;
 }
 
-
-
+/*Posicionamiento del hijo*/
+.hijo{
+  width: 500px;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: #28C76F;
+  border-style: dashed;
+}
 
 .boton
 {
@@ -41,18 +46,23 @@ cursor: pointer;
 margin-bottom: 20px;
 }
 
+
 .boton:hover{
 color: white;
+background: linear-gradient(90deg, #0396FF, #ABDCFF );
 }
 span{
   color: #28C76F;
 }
 
-/*Medias query*/
+/*Medias query Mobile*/
 
 @media only screen and (max-width: 780px) {
-    h1{
+    h1 {
         text-align: center;
         font-size: 2.5rem;
+    }
+    h2{
+      text-align: center;
     }
   }
